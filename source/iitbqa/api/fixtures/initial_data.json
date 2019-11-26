@@ -1,0 +1,182 @@
+[
+    {
+	"model":"api.Topic",
+	"pk" : 1,
+	"fields" : {
+	    "id" : 1,
+	    "name": "General"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 2,
+	"fields" : {
+	    "id" : 2,
+	    "name": "Computer Science"
+	} 
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 3,
+	"fields" : {
+	    "id" : 3,
+	    "name": "Theory"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 4,
+	"fields" : {
+	    "id" : 4,
+	    "name": "Systems"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 5,
+	"fields" : {
+	    "id" : 5,
+	    "name": "Machine Learning"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 6,
+	"fields" : {
+	    "id" : 6,
+	    "name": "Artificial Intelligence"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 7,
+	"fields" : {
+	    "id" : 7,
+	    "name": "Cryptography"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 8,
+	"fields" : {
+	    "id" : 8,
+	    "name": "Algorithms"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 9,
+	"fields" : {
+	    "id" : 9,
+	    "name": "Complexity"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 10,
+	"fields" : {
+	    "id" : 10,
+	    "name": "Quantum Physics"
+	 }
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 11,
+	"fields" : {
+	    "id" : 11,
+	    "name": "Physics"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 12,
+	"fields" : {
+	    "id" : 12,
+	    "name": "Chemistry"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 13,
+	"fields" : {
+	    "id" : 13,
+	    "name": "Biology"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 14,
+	"fields" : {
+	    "id" : 14,
+	    "name": "Sciences"
+	}
+    },
+    {
+	"model":"api.User",
+	"pk" : 1,
+	"fields" : {
+	    "id": 1,
+	    "name": "Roshan",
+	    "ldapid": "roshanp",
+	    "gender": "M",
+	    "department": "CSE",
+	    "bio": "PMRF Fellow",
+	    "student_professor": true,
+	    "degree": "PHD",
+	    "year": "F",
+	    "specialization": "Algorithms",
+	    "password": "$Money#",
+	    "subscribed_topics": [
+		1,
+		2,
+		3,
+		8
+	    ]
+	}
+    },
+    {
+	"model":"api.User",
+	"pk" : 2,
+	"fields" : {
+	    "id": 2,
+	    "name": "Muthu",
+	    "ldapid": "muthumani",
+	    "gender": "M",
+	    "department": "PHY",
+	    "bio": "South Indian Guy",
+	    "student_professor": true,
+	    "degree": "PHD",
+	    "year": "F",
+	    "specialization": "Physics",
+	    "password": "NoFan%",
+	    "subscribed_topics": [
+		1,
+		10,
+		11,
+		14
+	    ]
+	}
+    },
+    {
+	"model":"api.User",
+	"pk" : 3,
+	"fields" : {
+	    "id": 3,
+	    "name": "Ashwin",
+	    "ldapid": "kashwin",
+	    "gender": "M",
+	    "department": "CSE",
+	    "bio": "Identical to Virat Kohli",
+	    "student_professor": true,
+	    "degree": "PHD",
+	    "year": "F",
+	    "specialization": "Systems",
+	    "password": "Want@gf1",
+	    "subscribed_topics": [
+		1,
+		2,
+		4
+	    ]
+	}
+    }
+]

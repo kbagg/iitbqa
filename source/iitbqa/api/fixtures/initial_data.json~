@@ -1,0 +1,100 @@
+[
+    {
+	"model":"api.Topic",
+	"pk" : 1,
+	"fields" : { 
+	     "name": "General"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 2,
+	"fields" : {
+	     "name": "Computer Science"
+	} 
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 3,
+	"fields" : {
+	     "name": "Theory"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 4,
+	"fields" : {
+	     "name": "Systems"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 5,
+	"fields" : {
+	     "name": "Machine Learning"
+	 }
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 6,
+	"fields" : {
+	     "name": "Artificial Intelligence"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 7,
+	"fields" : {
+	     "name": "Cryptography"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 8,
+	"fields" : {
+	     "name": "Algorithms"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 9,
+	"fields" : {
+	     "name": "Complexity"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 10,
+	"fields" : {
+	     "name": "Quantum Physics"
+	 }
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 11,
+	"fields" : {
+	     "name": "Physics"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 12,
+	"fields" : {
+	     "name": "Chemistry"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 13,
+	"fields" : {
+	     "name": "Biology"
+	}
+    },
+    {
+	"model":"api.Topic",
+	"pk" : 14,
+	"fields" : {
+	     "name": "Sciences"
+	}
+    }
+]

@@ -1,0 +1,140 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage{a4wide}
+\usepackage{anysize}
+\usepackage[centertags]{amsmath}
+\usepackage{amsfonts,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{wrapfig}
+\usepackage{CSE}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage{fullpage}
+%\usepackage{rotating}
+
+\renewcommand{\baselinestretch}{1.2} %line spacing
+\marginsize{1.2in}{1.2in}{1in}{1in}   %left right top bottom
+%\textwidth 6in
+% Title Page
+
+\begin{document}
+
+\pagenumbering{roman}
+\pagestyle{plain}
+\def\title{IITB Q\&A}
+\def\what{CS 699: Lab Report}
+\def\who{K Ashwin Kumar (194050001) \\ Kaartik Bhushan (194050006)\\ Ankit Raj (193050098)}
+\def\guide{Prof. Kavi J. Arya}
+
+\titlpage
+
+
+
+\newpage
+\pagenumbering{arabic}
+\begin{document}
+\tableofcontents
+
+%============ Chapter 1 ( Introduction ) =========%
+\chapter{Introduction}
+The era of mobile technology changed from windows to the android app. The websites are vanishing and the android applications are emerging. Now its the time to change from crowded platform to \textbf{IITB Q\&A} android application software which is a miniature version of "Quora" but limited to institute, where your queries will be resolved by campus experts in their respective field. It helps not only in resolving query, but also helps in getting the information of interested topics/question by just one click i.e follow.\par 
+  Our multipurpose program is considering the user as either a student or a faculty. It acts as a college assistant and gives an overview about the campus to a newbie like the information related to department, faculties, subjects, projects, ongoing research and many academic related queries.\par
+User will be notified for the following actions if someone: 
+\begin{itemize}
+\itemsep0em 
+  \item answered user's question
+  \item upvoted or downvoted user's answer
+\end{itemize}
+Students can get suggestions from faculties of other department (whom you never meet) too and helps in interacting with experts in different domains. The application gathers user information like :
+\begin{itemize}
+\itemsep0em 
+    \item Ldap  
+    \item Department
+    \item Degree
+    \item Specialization
+    \item Name
+    \item Gender
+    \item Area of interest
+\end{itemize}
+This application requires users to register before they can login. It is necessary to login before you use the application. The user can browse through the different category of questions. Once a student/faculty becomes a user, he/she can post/follow questions. Users can get news feed for questions on followed topics and also questions asked by the user itself. \par
+Practical \textbf{usage and feature}
+\begin{itemize}
+\itemsep0em 
+    \item IITB students/faculty will be able to view, post and answer questions on the forum 
+    \item The questions on the forum will be tagged/identified by certain topics. Each question must be tagged with atleast a single topic. 
+    \item Users can follow topics on the forum during signup
+    \item Each answer will also be open to criticism in the form of upvotes and downvotes
+    \item The total votes of each user will be part of the user's personal information
+    \item A user will be notified when another user votes his/her answer or answers a question posted by him/her
+\end{itemize}
+
+%============ Chapter 2 ( Motivation ) ==========% 
+\chapter{Motivation}
+The main vision of this application is to build a bridge between newbie and experts in order to learn and explore different genres.
+\begin{itemize}
+\itemsep0em
+    \item Newly admitted students often have doubts/queries regarding subjects to choose \& field to explore but there is no forum to answer these queries.
+    \item A student can contact few of the seniors from their department but not all, their might be an area that student want to explore but that belongs to other department.
+    \item Not all queries need to be answered individually and many a times it is not known who in the campus might know the solution.
+    \item Even previously admitted students don't know the ongoing research work in their department let alone any other department.
+\end{itemize}   
+There is a serious requirement for a Q\&A forum working on the institute (or at least department) level. So we propose to build such a forum where students or professors alike can ask or answer questions with ease.
+
+%============= Chapter 3 (User Documentation) =========%
+\chapter{User Documentation}
+For hosting the server, keep in mind the following points :
+\begin{itemize}
+    \item "api" is the app for our project
+    \item Some initial data has already been provided in api/fixtures/initial\_data.json whose format is not very hard to understand. One can add more data to this file if need be.
+    \item All the topics to be used for the project have to be hardcoded into \\ api/fixtures/initial\_data.json
+    \item The url format for making queries to backend are specified in api/url.py along with iitbqa/settings.py
+    \item The major DB models/tables are specified in api/models.py
+    \item Data serializers for these models are provided in api/serializers.py
+    \item The major interactive functions with the DB are specified in api/views.py
+    \item If there is no data in the DB yet, then execute the following steps in order:
+    \begin{enumerate}
+        \item ./manage.py makemigrations
+        \item ./manage.py migrate
+        \item ./manage.py loaddata initial\_data.json
+        \item ./manage.py runserver
+    \end{enumerate}
+    \item If one wants to erase the current DB and start from scratch, then execute these following commands in the main project-
+    \begin{enumerate}
+        \item find . -path "*/migrations/*.py" -not -name "\_\_init\_\_.py" -delete
+        \item find . -path "*/migrations/*.pyc"  -delete
+        \item rm db.sqlite3
+    \end{enumerate}
+    \item Install the postman app for testing your backend code.
+\end{itemize}
+For running the application, perform the following steps in order:
+\begin{enumerate}
+    \item Launch AndroidStudio
+    \item Download emulator image for the device one wants to use
+    \item Run the project using this image
+\end{enumerate}
+To use the app, keep in mind the following:
+\begin{itemize}
+    \item There is no provision provided in case the user forgets his password, so always remember your password
+    \item The signup page asks the user for information along with a list of topics to subscribe
+    \item The feed of the user displays all questions with any tagged topic being a subscribed topic for the user as well as the questions which are asked by the user
+    \item The post question page can be used to ask a question
+    \item The user can post answer on a question and upvote/downvote some existing answer at most once
+    \item The notifications page displays whether some user has answered a question asked by you or upvoted/downvoted your answer
+    \item The personal page displays the logged in user's info along with the cool metric of totalvotes gather by the user
+\end{itemize}
+
+
+%========== Chapter 4 (Conclusion) ===========%
+\chapter{Conclusion}
+\begin{itemize}
+\itemsep0em
+    \item This project was a first experience for us in the android application field; hence it possesses much importance in our learning. We learnt basics of android application development using Android SDK & Django during our course project. We came across important documents of projects and got ideas about importance of documentation.
+    \item As the project evaluation follows the proper way, it was an experience of systematically going through the project phases, planning the project and implementing the same. 
+    \item \textbf{IITB Q\&A} is a type of forum which facilitates students/faculty to raise their queries and get it answered by expert.
+    \item From this project we came to know how to work with a team in deadline. We came to know what to do and what not to do to make our project unbeatable. It also gives us benefits to understand how real worlds projects can be carried out.
+    \item Overall it was a great learning experience.
+
+\end{itemize}
+\end{document}
+
+\end{document}          
