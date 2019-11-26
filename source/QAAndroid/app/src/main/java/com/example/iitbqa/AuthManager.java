@@ -132,4 +132,8 @@ public class AuthManager {
         Log.d("splash",splashJson);
         sharedPreferences.edit().putString(Constants.PrefKeys.SPLASH, splashJson).commit();
     }
+
+    public String getSpecialization() {
+        return gson.fromJson(sharedPreferences.getString(Constants.PrefKeys.USER, null), User.class).getSpecialization();
+    }
 }

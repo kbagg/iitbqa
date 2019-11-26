@@ -94,7 +94,7 @@ class User(models.Model):
     bio = models.CharField(max_length=1000)
     # True refers to a student while False refers to a professor
     student_professor = models.BooleanField(default=True)
-    degree = models.CharField(max_length=9, choices=degree_choices, default='NA')
+    degree = models.CharField(max_length=9, choices=degree_choices, default='NA', blank=True)
     year = models.CharField(max_length=2, choices=year_choices, default='NA')
     # Only for professors or post graduate students as well
     specialization = models.CharField(max_length=100, blank=True)

@@ -82,7 +82,12 @@ public class ProfileFragment extends Fragment implements ProfileContract.View{
         tvBio.setText(authManager.getBio());
         tvLdap.setText(authManager.getLdapId());
         tvName.setText(authManager.getName());
-        tvDegree.setText(authManager.getDegree());
+        if(authManager.getDegree().isEmpty()) {
+            tvDegree.setText(authManager.getSpecialization());
+        }
+        else {
+            tvDegree.setText(authManager.getDegree());
+        }
         tvDept.setText(authManager.getDepartment());
         tvUpvote.setText(authManager.getUpvotes() + " Upvotes");
 
