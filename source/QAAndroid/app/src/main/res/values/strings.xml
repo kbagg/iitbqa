@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IITB Q&amp;A</string>
+    <string name="menu_feed">Feed</string>
+    <string name="menu_post">Post</string>
+    <string name="menu_profile">Profile</string>
+    <string name="logout">Logout</string>
+</resources>
